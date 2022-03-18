@@ -1,130 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='landingcss.css' rel='stylesheet' type='text/css' />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
- 
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&family=Fraunces:wght@100;300;400;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ejercicio - Noelia Valle - Frontend Mentor | Sunnyside agency landing page</title>
 </head>
+
 <body>
-  <div class="header-div">
-    <header class="elementos-header">
 
-      <h1>We are creatives</h1>
-    <button>About</button>
-    <button>Services</button>
-    <button>Projects</button>
-    <button>Contact</button>
-      
-    </header>
-  </div>
+  <header>
+    <div class="header-div" id="myTopnav">
+      <a href="#About">About</a>
+      <a href="#Services">Services</a>
+      <a href="#Projects">Projects</a>
+      <a href="#contact">Contact</a>
 
- 
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <p class="active" href="#about">sunnyside</p>
+
+      <h1>WE ARE CREATIVES</h1>
+    </div>
+
+  </header>
+
+
+
   <main>
-    <div class="articulos-div">
-<div class="izquierda">
-  <article class="articulo-trasformacion">
-    <h2>Transform your brand</h2> 
-    <p>We are a full-service creative agency specializing in helping brands grow fast. 
-      Engage your clients through compelling visuals that do most of the marketing for you.
-    </p>
-      <h6>Learn more</h6>
 
-  </article>
-</div>
-     <div class="derecha">
-      <img src="./images/desktop/image-transform.jpg" alt="huevo">
-     </div> 
-      
-   
-     <div class="derecha">
-      <article>
-        <h2>Stand out to the right audience</h2>
-        <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    <div class="row">
+
+      <div class="column" id="column1">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
         </p>
-      
-       <h6>Learn more</h6>
-      </article>
-
-     </div>
-
-     <div class="izquierda">
-      <img src="./images/desktop/image-stand-out.jpg">
-     </div>
-      
-     <div class="izquierda">
-      <article class="graphic-design">
-        <h2> Graphic design</h2>
-        <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-       </p>
-       </article>
-    
-     </div>
-      
-     <div class="derecha">
-      <article class="photography">
-        <h2>Photography</h2>
-        <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-       </p>
-       </article>
+        <h6>Learn more</h6>
       </div>
-     </div>
-    
-    
-   
-    
-    Client testimonials
 
-    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-    Emily R.
-    Marketing Director
-  
-    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-    Thomas S.
-    Chief Operating Officer
-  
-    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    Jennie F.
-    Business Owner
-  
-    About
-    Services
-    Projects
-    Contact
-  
+      <div class="column" id="column2">
+        <img src="./images/desktop/image-transform.jpg" alt="huevo">
+      </div>
+
+      <div class="column" id="column3">
+        <h2>Stand out to the right audience</h2>
+        <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+          we’ll build and extend your brand in digital places.
+        </p>
+        <h6>Learn more</h6>
+      </div>
+
+      <div class="column" id="column4">
+        <img src="./images/desktop/image-stand-out.jpg" alt="copa rosa">
+      </div>
+
+      <div class="column">
+        <article class="graphic-design">
+          <div class="textoenfoto">
+          <h2> Graphic design</h2>
+          <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.
+          </p>
+        </div>
+        </article>
+      </div>
+
+      <div class="column">
+        <article class="photography">
+          <div class="textoenfoto">
+          <h2>Photography</h2>
+          <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image. <br><br>
+          </p>
+        </div>
+        </article>
+      </div>
+    </div>
+
+
+    <h5 id="titulo5">Client testimonials</h5>
+    <div class="testimonios">
+
+
+
+      <div class="container">
+        <img src="/landing page main - copia/images/image-emily.jpg" alt="Avatar" style="width:90px">
+
+        <p>We put our trust in Sunnyside and they
+          delivered, making sure our needs were met
+          and deadlines were always hit.
+        </p>
+        <p><span>Emily R.</span></p>
+        <p>Marketing Director</p>
+      </div>
+
+      <div class="container">
+        <img src="/landing page main - copia/images/image-thomas.jpg" alt="Avatar" style="width:90px">
+
+        <p> Sunnyside’s enthusiasm coupled with their
+          keen interest in our brand’s success made it
+          a satisfying and enjoyable
+          experience.</p>
+        <p><span>Thomas S.</span></p>
+        <p> Chief Operating Officer</p>
+      </div>
+
+      <div class="container">
+        <img src="/landing page main - copia/images/image-jennie.jpg" alt="Avatar" style="width:90px">
+
+        <p> Incredible end result! Our sales increased
+          over 400% when we worked with Sunnyside.
+          Highly recommended!
+        </p>
+        <p><span>Jennie F.</span></p>
+        <p>Business Owner</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      
+        <img src="/landing page main - copia/images/desktop/image-gallery-milkbottles.jpg" alt="Cinque Terre"
+          width="600" height="400">
+      
+      
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="Forest" width="600" height="400">
+      
+      
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="Northern Lights" width="600" height="400">
+      
+      
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Mountains" width="600" height="400">
+      
+    </div>
+
+    <footer>
+      <h1 id="active" href="#about">sunnyside</h1>
+      <div class="header-div2" id="myTopnav2">
+
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Projects">Projects</a>
+
+      </div>
+      <div class="iconossociales">
+        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+        <a class="fa fa-instagram" aria-hidden="true"></a>
+        <a class="fa fa-twitter-square" aria-hidden="true"></a>
+        <a class="fa fa-pinterest-square" aria-hidden="true"></a>
+        
+        
+        
+        
+      </div>
+
+    </footer>
+
+
+
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Noelia Valle</a>.
     </div>
-   
 
-   
-   
-    
-   
-   
-    
-   
-   
-   
-    
+
+
+
+
+
+
+
+
+
+
+
 
   </main>
 
- 
 
-  
-
- 
-
- 
-
- 
-
-  
-
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "header-div") {
+        x.className += "responsive";
+      } else {
+        x.className = "header-div";
+      }
+    }
+  </script>
 </body>
+
 </html>
